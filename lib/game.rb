@@ -6,7 +6,7 @@ class Game
     [0,4,8], [2,4,6]
     ]
   
-  attr_accessor :player_1, :player_2, :board, :name
+  attr_accessor :player_1, :player_2, :board
   
   def initialize(player_1 = nil, player_2 = nil, board = nil)
     player_1 == nil ? @player_1 = Players::Human.new("X") : @player_1 = player_1
@@ -79,11 +79,7 @@ class Game
         @player_2 = Players::Computer.new("O")
         play
       when 2 #player vs player
-        puts "Great! Who wants to be first and be 'X'? Please provide your name:"
-        @player_1.name = gets.chomp
-        puts "Awesome, #{@player_1.name}! Who wants to be 'O'? Please provide your name:"
-        @player_2.name = gets.chomp
-        puts "Nice to meet you, #{@player_2.name}. Alright, #{@player_1.name}, it is your turn."
+        puts "Great! Who wants to go first and be 'X'?
         play
     end
   end
