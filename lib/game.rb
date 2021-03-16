@@ -81,6 +81,7 @@ class Game
       when 2 #player vs player
         puts "Great! Who wants to go first and be 'X'?
         play
+      end
     end
   end
 end
