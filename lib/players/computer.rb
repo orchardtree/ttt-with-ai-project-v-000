@@ -9,7 +9,7 @@ module Players
         elsif board.cells[4] == " "
           @@board_pos.delete("5") #center
         elsif board.cells[4] == "X"
-          @@board_pos.delete("7") #counter to X in center position
+          @@board_pos.delete("8") #bottom-center, counter to X in center position
       #top-center
         elsif board.cells[4] == "X" && board.cells[7] == "X" && board.cells[1] == " " ||
           board.cells[0] == "X" && board.cells[2] == "X" && board.cells[1] == " " ||
