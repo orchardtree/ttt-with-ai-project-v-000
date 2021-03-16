@@ -78,7 +78,6 @@ module Players
         else
           @@board_pos.delete(@@board_pos.sample)
       end
-      binding.pry
     end
   end
 end
