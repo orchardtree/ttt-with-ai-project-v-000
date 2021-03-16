@@ -79,7 +79,7 @@ class Game
         @player_2 = Players::Computer.new("O")
         play
       when 2 #player vs player
-        puts "Great! Who wants to go first and be 'X'?
+        puts "Great! Who wants to go first and be 'X'?"
         play
       end
     end
